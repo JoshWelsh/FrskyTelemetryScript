@@ -1205,6 +1205,7 @@ local function setSensorValues()
   do
     setTelemetryValue(sensors[s][1], sensors[s][2], sensors[s][3], sensors[s][4], sensors[s][5] , sensors[s][6] , sensors[s][7])
   end
+  setTelemetryValue(0x060F, 0, 2, telemetry.flightMode, 0 , 0 , "FMOD")
 end
 
 --------------------
